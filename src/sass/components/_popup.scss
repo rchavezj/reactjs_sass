@@ -1,0 +1,103 @@
+.popup {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba($color-black, 0.8);
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, 0.3);
+    }
+
+
+    &__content {
+        @include absCenter;
+        width: 75%;
+        // height: 50rem;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.25);
+        transition: all 0.4s 0.2s;
+        display: table;
+        overflow: hidden;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    }
+
+    &__left {
+        width: 33.333333%;
+        display: table-cell;
+    }
+
+    &__right {
+        padding: 3rem 5rem;
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        -moz-column-count: 2;
+        // default is 1rem
+        -moz-column-gap: 4rem;
+        -moz-column-rule: 1px solid $color-grey-dark-2;
+
+        column-count: 2;
+        // default is 1rem
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-dark-2;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+
+    // User clicked on the target id "popup"
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+
+        &:link,
+        &:visited {
+            top: 2.5rem;
+            right: 2.5rem;
+            line-height: 1;
+            font-size: 3rem;
+            position: absolute;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            color: $color-grey-dark;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  color: #777;
+  padding: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "Lato", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/** 
+ * vh: @ every point the height of the green header box, of this element, 
+ * should be 95% of the viewport height. Now we could put 100vh, then the
+ * element would always be exactly the same height as the viewport, but I
+ * chose to go with 95 to make it not 100, but almost to 100. 
+ *
+ */
+.header {
+  height: 95vh; 
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 131, 0.8)),
+    url(./img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /*
+    * 1st: Top left 
+    * 2nd: Top right
+    * 3rd: Bottom Right
+    * 4th: Bottom Left
+    */
+    clip-path: polygon(0 0, 100% 0, 100% 57%, 0 75%)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.logo-box {
+  top: 40px;
+  left: 40px;
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 100;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 15px;
 }
