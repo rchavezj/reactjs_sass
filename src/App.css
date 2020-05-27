@@ -37,7 +37,7 @@ body {
     * 3rd: Bottom Right
     * 4th: Bottom Left
     */
-    clip-path: polygon(0 0, 100% 0, 100% 57%, 0 75%)
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)
 }
 
 
@@ -51,11 +51,19 @@ body {
   height: 35px;
 }
 
+.text-box {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -63,11 +71,64 @@ body {
   font-size: 60px;
   font-weight: 100;
   letter-spacing: 35px;
+
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-iteration-count: 3s;
+  animation-timing-function: ease-out;
+  /* animation-delay: 3s; */
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 15px;
+  letter-spacing: 17.4px;
+
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  animation-iteration-count: 3s;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes moveInLeft {
+  /* start */
+  0% {
+    opacity: 0; /* invisible */
+    transform: translateX(-100px);
+  }
+
+  /* halfway */
+  80% {
+    transform: translateX(10px);
+  }
+
+  /* finish */
+  100% {
+    opacity: 1; /* visible */
+    transform: translateX(0);
+  }
+}
+
+
+
+
+@keyframes moveInRight {
+  /* start */
+  0% {
+    opacity: 0; /* invisible */
+    transform: translateX(100);
+  }
+
+  /* halfway */
+  80% {
+    transform: translateX(-10px);
+  }
+
+  /* finish */
+  100% {
+    opacity: 1; /* visible */
+    transform: translateX(0);
+  }
 }
