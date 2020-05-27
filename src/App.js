@@ -9,7 +9,7 @@ const App = () => {
         <img src={Logo} className="logo" alt="Logo" />
       </div>
       <h1 className="heading-primary">
-        <span className="heading-primary-main">Outdoors</span>
+        <span className="heading-primary-main">Niocraft</span>
         <span className="heading-primary-sub">is where life happens</span>
       </h1>
     </header>
