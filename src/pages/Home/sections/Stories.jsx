@@ -1,14 +1,19 @@
 import React from 'react';
 
+import video1 from '../../../img/video.mp4';
+import webm1 from '../../../img/video.webm';
+
+import nat8 from '../../../img/nat-8.jpg';
+import nat9 from '../../../img/nat-9.jpg';
 
 const Stories = () => {
     return (
         <section className="section-stories">
             <div className="bg-video">
                 <video className="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4" />
-                    <source src="img/video.webm" type="video/webm" />
-                            Your browser is not supported!
+                    <source src={video1} type="video/mp4" />
+                    <source src={webm1} type="video/webm" />
+                        Your browser is not supported!
                 </video>
             </div>
 
@@ -21,7 +26,7 @@ const Stories = () => {
             <div className="row">
                 <div className="story">
                     <figure className="story__shape">
-                        <img src="img/nat-8.jpg" alt="Person on a tour" className="story__img" />
+                        <img src={nat8} alt="Person on a tour" className="story__img" />
                         <figcaption className="story__caption">Mary Smith</figcaption>
                     </figure>
                     <div className="story__text">
@@ -39,7 +44,7 @@ const Stories = () => {
             <div className="row">
                 <div className="story">
                     <figure className="story__shape">
-                        <img src="img/nat-9.jpg" alt="Person on a tour" className="story__img" />
+                        <img src={nat9} alt="Person on a tour" className="story__img" />
                         <figcaption className="story__caption">Jack Wilson</figcaption>
                     </figure>
                     <div className="story__text">

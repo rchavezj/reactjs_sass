@@ -1,6 +1,12 @@
 import React from 'react';
-// import '../../Home/_home.scss'
-// import "../../../main.scss";
+
+import nat1 from '../../../img/nat-1.jpg';
+import nat1Large from '../../../img/nat-1-large.jpg';
+import nat2 from '../../../img/nat-2-large.jpg';
+import nat2Large from '../../../img/nat-2-large.jpg';
+import nat3 from '../../../img/nat-3.jpg';
+import nat3Large from '../../../img/nat-3-large.jpg';
+
 
 const About = () => {
     return (
@@ -34,22 +40,22 @@ const About = () => {
                 <div className="col-1-of-2">
                     <div className="composition">
 
-                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                        <img srcSet={`${nat1} 300w, ${nat1Large} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
-                            className="composition__photo composition__photo--p1" src="img/nat-1-large.jpg" />
+                            className="composition__photo composition__photo--p1" src={nat1} />
 
-                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        <img srcSet={`${nat2} 300w, ${nat2Large} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
-                            className="composition__photo composition__photo--p2" src="img/nat-2-large.jpg" />
+                            className="composition__photo composition__photo--p2" src={nat2} />
 
-                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                        <img srcSet={`${nat3} 300w, ${nat3Large} 1000w`}
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
-                            className="composition__photo composition__photo--p3" src="img/nat-3-large.jpg" />
+                            className="composition__photo composition__photo--p3" src={nat3} />
 
 
-                        <img src="img/nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1" />
-                        <img src="img/nat-2-large.jpg" alt="Photo 2" className="composition__photo composition__photo--p2" />
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3" />
+                        <img src={nat1Large} alt="Photo 1" className="composition__photo composition__photo--p1" />
+                        <img src={nat2Large} alt="Photo 2" className="composition__photo composition__photo--p2" />
+                        <img src={nat3Large} alt="Photo 3" className="composition__photo composition__photo--p3" />
 
                     </div>
                 </div>

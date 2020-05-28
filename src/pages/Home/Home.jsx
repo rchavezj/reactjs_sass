@@ -7,16 +7,18 @@ import Stories from './sections/Stories';
 import Book from './sections/Book';
 
 import Header from '../../layout/Header/Header';
+import Footer from '../../layout/Footer/Footer';
 
 const Home = () => {
     return (
         <>
             <Header />
             <About />
-            {/* <Features />
+            <Features />
             <Tours />
             <Stories />
-            <Book /> */}
+            <Book />
+            <Footer />
         </>
     )
 }

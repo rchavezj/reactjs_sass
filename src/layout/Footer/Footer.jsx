@@ -1,5 +1,11 @@
 import React from 'react';
 
+import green1x from '../../img/logo-green-1x.png'
+import greenSmall1x from '../../img/logo-green-small-1x.png';
+
+import green2x from '../../img/logo-green-2x.png'
+import greenSmall2x from '../../img/logo-green-small-2x.png';
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -7,9 +13,9 @@ const Footer = () => {
             <div className="footer__logo-box">
 
                 <picture className="footer__logo">
-                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                    <source srcSet={`${greenSmall1x} 1x, ${greenSmall2x} 2x`}
                         media="(max-width: 37.5em)" />
-                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo"
+                    <img srcSet={`${green1x} 1x, ${green2x} 2x`} alt="Full logo"
                         src="img/logo-green-2x.png" />
                 </picture>
 
