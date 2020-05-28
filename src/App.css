@@ -155,7 +155,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 100px;
-  transition: all .2s;
+  transition: all 0.2s;
+  position: relative;
 }
 
 /* opposite direction from btn:active */
@@ -171,7 +172,26 @@ body {
 }
 
 .btn-white {
+  background-color: #fff;
   color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+ 
+/* .btn-white::after {
   background-color: #fff;
 }
 
+.btn:hover::after {
+  transform: scale(2);
+}  */
