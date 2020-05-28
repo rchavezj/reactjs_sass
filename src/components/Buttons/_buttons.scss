@@ -1,5 +1,7 @@
-.btn {
+@import '../../abstract/mixins.scss';
+@import '../../abstract/_variables.scss';
 
+.btn {
     &,
     &:link,
     &:visited {
@@ -98,3 +100,30 @@
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     }
 }
+
+
+
+.btn:link,
+.bth:visited {
+  margin-top: 30px;
+  padding: 15px 40px;
+  display: inline-block;  /*The padding between elements. */
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+/* opposite direction from btn:active */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* opposite direction from btn:hover */
+.btn:active {
+  transform : translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+

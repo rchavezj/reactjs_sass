@@ -1,4 +1,6 @@
 import React from 'react';
+// import '../../Home/_home.scss'
+// import "../../../main.scss";
 
 const About = () => {
     return (
@@ -56,3 +58,5 @@ const About = () => {
         </section>
     )
 }
+
+export default About;

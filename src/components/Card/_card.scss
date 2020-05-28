@@ -65,7 +65,7 @@
             background-image:
                 linear-gradient(to right bottom,
                     $color-secondary-light,
-                    $color-secondary-dark), url(../img/nat-5.jpg);
+                    $color-secondary-dark), url(../../img/nat-5.jpg);
         }
 
         // Front side Styling
@@ -73,14 +73,14 @@
             background-image:
                 linear-gradient(to right bottom,
                     $color-primary-light,
-                    $color-primary-dark), url(../img/nat-6.jpg);
+                    $color-primary-dark), url(../../img/nat-6.jpg);
         }
 
         &--3 {
             background-image:
                 linear-gradient(to right bottom,
                     $color-tertiary-light,
-                    $color-tertiary-dark), url(../img/nat-7.jpg);
+                    $color-tertiary-dark), url(../../img/nat-7.jpg);
         }
     }
 

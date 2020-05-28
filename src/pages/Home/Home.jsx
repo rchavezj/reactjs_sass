@@ -6,14 +6,17 @@ import Tours from './sections/Tours';
 import Stories from './sections/Stories';
 import Book from './sections/Book';
 
+import Header from '../../layout/Header/Header';
+
 const Home = () => {
     return (
         <>
+            <Header />
             <About />
-            <Features />
+            {/* <Features />
             <Tours />
             <Stories />
-            <Book />
+            <Book /> */}
         </>
     )
 }
