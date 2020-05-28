@@ -8,10 +8,11 @@ import Book from './sections/Book';
 
 import Header from '../../layout/Header/Header';
 import Footer from '../../layout/Footer/Footer';
-
+import Navigation from '../../layout/Navigation/Navigation';
 const Home = () => {
     return (
         <>
+            <Navigation />
             <Header />
             <About />
             <Features />

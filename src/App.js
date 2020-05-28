@@ -1,4 +1,4 @@
-import './main.scss';
+import './App.scss';
 
 import React from "react";
 import Home from './pages/Home/Home';
