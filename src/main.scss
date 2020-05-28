@@ -10,14 +10,14 @@
 @import "base/utilities";
 
 // Components
-@import "components/form";
-@import "components/card";
-@import "components/story";
-@import "components/popup";
-@import "components/buttons";
-@import "components/bg-video";
-@import "components/composition";
-@import "components/feature-box";
+@import "components/Form/form";
+@import "components/Card/card";
+@import "components/Story/story";
+@import "components/Popup/popup";
+@import "components/Buttons/buttons";
+@import "components/BgVideo/bg-video";
+@import "components/Composition/composition";
+@import "components/FeatureBox/feature-box";
 
 // Layout
 @import "layout/Grid/grid";
