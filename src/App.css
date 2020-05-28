@@ -55,6 +55,18 @@ body {
   top: 40%;
   left: 50%;
   position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.logo:hover {
+  animation: moveInRight 1s ease-out;
+}
+
+.text-box {
+  top: 40%;
+  left: 50%;
+  position: absolute;
   transform: translate(-50%, -50%);
 }
 
@@ -85,7 +97,7 @@ body {
   font-weight: 400;
   letter-spacing: 17.4px;
 
-  animation-name: moveInRight;
+  animation: moveInRight;
   animation-duration: 3s;
   animation-iteration-count: 3s;
   animation-timing-function: ease-out;
@@ -98,6 +110,7 @@ body {
     opacity: 0; /* invisible */
     transform: translateX(-100px);
   }
+
 
   /* halfway */
   80% {
@@ -132,3 +145,30 @@ body {
     transform: translateX(0);
   }
 }
+
+
+.btn:link,
+.bth:visited {
+  padding: 15px 40px;
+  display: inline-block;  /*The padding between elements. */
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: all .2s;
+}
+
+/* opposite direction from btn:active */
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* opposite direction from btn:hover */
+.btn:active {
+  transform : translateY(-1px);
+}
+
+.btn-white {
+  color: #777;
+  background-color: #fff;
+}
+

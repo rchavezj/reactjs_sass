@@ -14,7 +14,10 @@ const App = () => {
           <span className="heading-primary-main">Niocraft</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
+        <a href="#" className="btn btn-white">Discover our tour</a>
       </div>
+
+
 
     </header>
 
