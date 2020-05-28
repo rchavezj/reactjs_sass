@@ -16,9 +16,6 @@ const App = () => {
         </h1>
         <a href="#" className="btn btn-white">Discover our tour</a>
       </div>
-
-
-
     </header>
 
 
