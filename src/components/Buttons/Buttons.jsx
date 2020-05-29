@@ -10,7 +10,7 @@ const hrefEmpty = (href) => {
 const Button = ({ hrefLink, additionalCssClass, caption }) => {
     return (
         <a
-            href={(hrefEmpty(hrefLink) ? `/#` : `${hrefLink}`)}
+            href={(hrefEmpty(hrefLink) ? "/#" : `${hrefLink}`)}
             className={`btn ${additionalCssClass}`}
         >
             {caption}
