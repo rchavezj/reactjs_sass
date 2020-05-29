@@ -7,6 +7,7 @@ import nat2Large from '../../../img/nat-2-large.jpg';
 import nat3 from '../../../img/nat-3.jpg';
 import nat3Large from '../../../img/nat-3-large.jpg';
 
+import CompositionImg from '../../../components/Composition/Composition';
 
 const About = () => {
     return (
@@ -40,22 +41,9 @@ const About = () => {
                 <div className="col-1-of-2">
                     <div className="composition">
 
-                        <img srcSet={`${nat1} 300w, ${nat1Large} 1000w`}
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="/#"
-                            className="composition__photo composition__photo--p1" src={nat1} />
-
-                        <img srcSet={`${nat2} 300w, ${nat2Large} 1000w`}
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="/#"
-                            className="composition__photo composition__photo--p2" src={nat2} />
-
-                        <img srcSet={`${nat3} 300w, ${nat3Large} 1000w`}
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="/#"
-                            className="composition__photo composition__photo--p3" src={nat3} />
-
-
-                        <img src={nat1Large} alt="/#" className="composition__photo composition__photo--p1" />
-                        <img src={nat2Large} alt="/#" className="composition__photo composition__photo--p2" />
-                        <img src={nat3Large} alt="/#" className="composition__photo composition__photo--p3" />
+                        <CompositionImg nat={nat1} natLarge={nat1Large} classNum={`composition__photo--p1`} />
+                        <CompositionImg nat={nat2} natLarge={nat2Large} classNum={`composition__photo--p2`} />
+                        <CompositionImg nat={nat3} natLarge={nat3Large} classNum={`composition__photo--p3`} />
 
                     </div>
                 </div>
