@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__logo-box">
-                <img src={logo} className="header__logo" />
+                <img src={logo} alt="/#" className="header__logo" />
             </div>
 
             <div className="header__text-box">
@@ -13,7 +13,7 @@ const Header = () => {
                     <span className="heading-primary--main">Outdoors</span>
                     <span className="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a className="btn btn--white btn--animated">Discover our tours</a>
+                <a href="/#" className="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
     )
