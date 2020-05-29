@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from "../../img/logo-white.png";
 
+import Button from '../../components/Buttons/Buttons';
+
 const Header = () => {
     return (
         <header className="header">
@@ -13,7 +15,11 @@ const Header = () => {
                     <span className="heading-primary--main">Outdoors</span>
                     <span className="heading-primary--sub">is where life happens</span>
                 </h1>
-                <a href="/#" className="btn btn--white btn--animated">Discover our tours</a>
+                <Button
+                    hrefLink={`/#`}
+                    additionalCssClass={`btn--white btn--animated`}
+                    caption={`Discover our tours`}
+                />
             </div>
         </header>
     )

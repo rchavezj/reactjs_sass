@@ -9,6 +9,8 @@ import nat3Large from '../../../img/nat-3-large.jpg';
 
 import CompositionImg from '../../../components/Composition/Composition';
 
+import Button from '../../../components/Buttons/Buttons';
+
 const About = () => {
     return (
         <section className="section-about">
@@ -35,7 +37,13 @@ const About = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum
                         nam.
                     </p>
-                    <a href="/#" className="btn-text">Learn more &rarr;</a>
+                    <Button
+                        hrefLink={`/#`}
+                        additionalCssClass={`btn-text`}
+                        caption={`Learn more`}
+                    />&rarr;
+
+
                 </div>
 
                 <div className="col-1-of-2">

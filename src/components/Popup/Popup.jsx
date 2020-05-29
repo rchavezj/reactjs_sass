@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../Buttons/Buttons';
 
 const Popup = () => {
     return (
@@ -28,7 +29,7 @@ const Popup = () => {
                         vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
                         euismod nisi porta.
                 </p>
-                    <a href="#" className="btn btn--green">Book now</a>
+                    <Button hrefLink={`/#`} additionalCssClass={`btn--green`} caption={`Book now`} />
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Card from '../../../components/Card/Card';
+import Button from '../../../components/Buttons/Buttons';
 
 const Tours = () => {
     return (
@@ -12,7 +13,7 @@ const Tours = () => {
             </div>
 
             <div className="row">
-                <Card 
+                <Card
                     title={`The Sea Explorer`}
                     numberOfDays={3}
                     numberOfPeople={30}
@@ -22,7 +23,7 @@ const Tours = () => {
                     price={297}
                     cardNumber={1}
                 />
-                <Card 
+                <Card
                     title={`The Forest Hiker`}
                     numberOfDays={7}
                     numberOfPeople={40}
@@ -32,7 +33,7 @@ const Tours = () => {
                     price={497}
                     cardNumber={2}
                 />
-                <Card 
+                <Card
                     title={`The Snow Adventurer`}
                     numberOfDays={5}
                     numberOfPeople={15}
@@ -45,9 +46,13 @@ const Tours = () => {
             </div>
 
             <div className="u-center-text u-margin-top-huge">
-                <a href="/#" className="btn btn--green">
-                    Discover all tours
-                </a>
+                <Button
+                    hrefLink={`/#`}
+                    additionalCssClass={`btn--text`}
+                    caption={`Discover all tours`}
+                />&rarr;
+
+
             </div>
         </section>
     )

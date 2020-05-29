@@ -10,6 +10,9 @@ import Story from '../../../components/Story/Story';
 
 import BgVideo from '../../../components/BgVideo/BgVideo';
 
+import Button from '../../../components/Buttons/Buttons';
+
+
 const Stories = () => {
     return (
         <section className="section-stories">
@@ -49,7 +52,13 @@ const Stories = () => {
             />
 
             <div className="u-center-text u-margin-top-huge">
-                <a href="/#" className="btn-text">Read all stories &rarr;</a>
+                <Button
+                    hrefLink={`/#`}
+                    additionalCssClass={`btn--text`}
+                    caption={`Read all stories`}
+                >&rarr;
+                </Button>
+
             </div>
         </section>
     )
