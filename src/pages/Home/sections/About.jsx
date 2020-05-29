@@ -9,7 +9,7 @@ import nat3Large from '../../../img/nat-3-large.jpg';
 
 import CompositionImg from '../../../components/Composition/Composition';
 
-import Button from '../../../components/Buttons/Buttons';
+// import Button from '../../../components/Buttons/Buttons';
 
 const About = () => {
     return (
@@ -37,11 +37,7 @@ const About = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum
                         nam.
                     </p>
-                    <Button
-                        hrefLink={`/#`}
-                        additionalCssClass={`btn-text`}
-                        caption={`Learn more`}
-                    />&rarr;
+                    <a href="/#" className="btn-text">Learn more &rarr;</a>
 
 
                 </div>
