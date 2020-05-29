@@ -8,16 +8,13 @@ import nat9 from '../../../img/nat-9.jpg';
 
 import Story from '../../../components/Story/Story';
 
+import BgVideo from '../../../components/BgVideo/BgVideo';
+
 const Stories = () => {
     return (
         <section className="section-stories">
-            <div className="bg-video">
-                <video className="bg-video__content" autoplay muted loop>
-                    <source src={video1} type="video/mp4" />
-                    <source src={webm1} type="video/webm" />
-                        Your browser is not supported!
-                </video>
-            </div>
+
+            <BgVideo video={video1} webm={webm1} />
 
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">
